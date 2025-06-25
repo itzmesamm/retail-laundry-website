@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - FabCare Laundry</title>
+  <link rel="stylesheet" href="contact.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+  <!-- Navbar -->
+  <div class="navbar-wrapper">
+    <div class="main-navbar">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <img src="images/logo.jpeg" alt="FabCare Logo" />
+        </div>
+        <div class="company-name">FabCare Laundry</div>
+      </div>
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Got a Question or Need Our Services?</h1>
+      <p>Let us help you with bookings, queries, and anything laundry-related. We're here to assist!</p>
+    </div>
+  </section>
+
+  <!-- Contact Form and Map -->
+  <section class="contact-main">
+    <div class="form-section">
+      <h2>Request a Consultant</h2>
+      <form action="mailto:contact@fabcarelaundry.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Full Name" required />
+        <input type="email" name="Email" placeholder="Email Address" required />
+        <input type="tel" name="Phone" placeholder="Phone Number" required />
+        <textarea name="Message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Email</button>
+      </form>
+    </div>
+
+    <div class="map-section">
+  <h2>Visit Our Main Branch</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Shop+No.+20,+Atlantis+Apartment,+Vihang+Valley+Phase+1,+Boriwade,+Kasarvadali,+Thane+West,+400615&output=embed"
+    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+  <p><strong>Address:</strong> Shop No. 20, Atlantis Apartment, Vihang Valley Phase 1, Boriwade, Kasarvadali, Thane West, 400615</p>
+  <p>
+    <strong>Phone:</strong> 
+    <a href="tel:+917738943963" style="color: inherit; text-decoration: underline;">
+      +91 77389 43963
+    </a>
+  </p>
+  <p>
+    <strong>Email:</strong> 
+    <a href="mailto:fabcarelaundry2024@gmail.com" style="color: inherit; text-decoration: underline;">
+      fabcarelaundry202@gmail.com
+    </a>
+  </p>
+</div>
+<section class="contact-main"></section>
+</div>
+
+    <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FabCare Laundry. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
